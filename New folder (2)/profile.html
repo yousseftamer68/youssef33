@@ -1,0 +1,67 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الملف الشخصي</title>
+    <style>
+        body { font-family: Arial; direction: rtl; background-color: #f9f9f9; text-align: center; }
+        .container { max-width: 700px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+        h2 { color: #333; }
+        .section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f0f0; text-align: right; }
+        .section h3 { margin-bottom: 10px; color: #555; }
+        .button-group { margin-top: 30px; }
+        button { padding: 10px 20px; margin: 5px; border: none; border-radius: 5px; cursor: pointer; }
+        .primary { background-color: #007BFF; color: white; }
+        .secondary { background-color: #28a745; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>الملف الشخصي / Profile</h2>
+
+        <div class="section">
+            <h3>الاسم / Name:</h3>
+            <p>يوسف تامر صلاح الغنام / Youssef Tamer Salah Al-Ghannam</p>
+        </div>
+
+        <div class="section">
+            <h3>العمر / Age:</h3>
+            <p>14 سنة / 14 years old</p>
+        </div>
+
+        <div class="section">
+            <h3>المهارات / Skills:</h3>
+            <p>
+                - إنشاء المواقع / Web Development<br>
+                - تصميم الجرافيك / Graphic Design<br>
+                - تصليح أعطال الويندوز والحاسوب / Windows & PC Troubleshooting<br>
+                - صناعة الفيديوهات / Video Production
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>الهواية / Hobby:</h3>
+            <p>مصور فوتوغرافي / Photographer</p>
+        </div>
+
+        <div class="section">
+            <h3>اللغات التي أتحدثها / Languages I speak:</h3>
+            <p>العربية، الإنجليزية / Arabic, English</p>
+        </div>
+
+        <div class="section">
+            <h3>للتواصل معي / Contact:</h3>
+            <p>
+                البريد الإلكتروني / Email: yousseftamer25535@gmail.com<br>
+                رقم الهاتف / Phone: 01507844107
+            </p>
+        </div>
+
+        <div class="button-group">
+            <button class="primary" onclick="window.location.href='index.html'">الصفحة الرئيسية / Home</button>
+            <button class="secondary" onclick="window.location.href='register.php'">تسجيل حساب جديد / Register New Account</button>
+        </div>
+    </div>
+</body>
+</html>

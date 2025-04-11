@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; text-align: center; background-color: #f4f4f4; }
+        .container { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, button { width: 90%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+        button { background: blue; color: white; cursor: pointer; }
+        .error { color: red; display: none; }
+    </style>
+    <script>
+        function validateLogin() {
+            let inputs = document.querySelectorAll(".container input");
+            let errorMessage = document.getElementById("error-message");
+            for (let input of inputs) {
+                if (input.value.trim() === "") {
+                    errorMessage.style.display = "block";
+                    return;
+                }
+            }
+            window.location.href = 'profile.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>تسجيل الدخول</h2>
+        <input type="text" placeholder="اسم المستخدم">
+        <input type="password" placeholder="كلمة المرور">
+        <button onclick="validateLogin()">تسجيل الدخول</button>
+        <p id="error-message" class="error">قم بكتابة المعلومات كاملة</p>
+        <button onclick="window.location.href='register.html'">إنشاء حساب جديد</button>
+    </div>
+</body>
+</html>
